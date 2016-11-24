@@ -1,0 +1,5 @@
+---
+cron_tasks: []
+cron_vars:
+  - name: PATH
+    value: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/bin"

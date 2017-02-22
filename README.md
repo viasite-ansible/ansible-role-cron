@@ -1,4 +1,4 @@
-[![build status](http://git.viasite.ru/ansible/ansible-role-cron/badges/master/build.svg)](http://git.viasite.ru/ansible/ansible-role-cron/commits/master)
+[![Build Status](https://travis-ci.org/viasite-ansible/ansible-role-cron.svg?branch=master)](https://travis-ci.org/viasite-ansible/ansible-role-cron)
 
 ## Usage
 Place role call to meta/main.yml:

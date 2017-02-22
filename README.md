@@ -1,4 +1,6 @@
-# Usage
+[![build status](http://git.viasite.ru/ansible/ansible-role-cron/badges/master/build.svg)](http://git.viasite.ru/ansible/ansible-role-cron/commits/master)
+
+## Usage
 Place role call to meta/main.yml:
 ```
 dependencies:

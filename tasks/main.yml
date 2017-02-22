@@ -1,4 +1,11 @@
 --- # from https://github.com/weareinteractive/ansible-cron/blob/master/tasks/config.yml
+
+- name: Ensure cron installed
+  apt:
+    name: cron
+    state: present
+  tags: [ cron ]
+
 - name: Configuring cron tasks
   cron:
     cron_file: "{{ item.cron_file | default(omit) }}"

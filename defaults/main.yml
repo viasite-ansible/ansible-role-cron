@@ -3,3 +3,7 @@ cron_tasks: []
 cron_vars:
   - name: PATH
     value: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/bin"
+
+cron_crontab_tasks_overwrite: no
+cron_crontab_tasks: []
+cron_crontab_vars: "{{ cron_vars }}"

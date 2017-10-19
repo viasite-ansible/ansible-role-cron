@@ -15,3 +15,9 @@ Or you can include role as task from Ansible 2.2:
   vars:
     cron_tasks: "{{backups_mysql_cron_tasks}}"
 ```
+
+### Manage /etc/crontab
+You can delete system `/etc/crontab`.  
+**Attention**, detecting just by "system-wide crontab" comment, may delete your manual tasks!  
+Enable owerwrite: `cron_crontab_tasks_overwrite: yes`, 
+then define `cron_crontab_vars` and `cron_crontab_tasks`.

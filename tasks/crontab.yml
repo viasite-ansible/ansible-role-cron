@@ -4,6 +4,7 @@
   register: cron_check_standard_crontab
   changed_when: false
   failed_when: false
+  tags: skip_ansible_lint
 
 - name: Remove standard /etc/crontab
   file:

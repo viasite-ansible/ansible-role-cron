@@ -6,11 +6,9 @@ services:
   - docker
 
 before_install:
-  - sudo apt-get -qq update
+  - docker --version
 install:
   - pip install molecule docker
-before_script:
-  - export MOLECULE_APTPROXY_PATH="$PWD/00aptproxy" && touch "$MOLECULE_APTPROXY_PATH"
 script:
   - molecule test
 

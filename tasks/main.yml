@@ -36,6 +36,6 @@
   tags: [ cron ]
 
 - name: Replace /etc/crontab
-  include: crontab.yml
+  include_tasks: crontab.yml
   when: cron_crontab_tasks_overwrite
   tags: [ cron, crontab ]
